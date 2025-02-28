@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGOHunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>Welcome to OGOHunt</h1>
+        <h3 class="abc">Finding Owners of old Accounts made easy!</h3>
+        <nav>
+            <a href="https://geigi.minecraft.cam/" target="_blank">About Me</a>
+            <a href="prices.html">Prices</a>
+            <a href="https://oguser.com/Thread-Minecon-OGO-Buys-ADDING-NEW-HITS-EVERY-DAY" target="_blank">Buy OGO Minecons</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="mid">Info Generator</h2>
+            <div class="form-row">
+                <input type="text" id="username" placeholder="Enter the username">
+                <select id="cape-year">
+                    <option value="">Select Cape Year</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="number" id="name-changes" placeholder="Enter number of name changes">
+                <select id="text-type">
+                    <option value="Discord">Discord</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="text" id="sender-name" placeholder="Enter your name" value="Geigi">
+                <button onclick="generateInfo()">Generate Info</button>
+            </div>
+            <div id="result" class="result-box"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

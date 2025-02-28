@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dimming effect */
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(31, 31, 31, 0.8);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h3 {
+    margin: 10px 0 0 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: transform 0.2s, border 0.2s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 100px; /* Platz zum Scrollen */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 22px);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, border 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.copy-button:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+.copy-button:after {
+    content: '📋';
+}
+
+copy-button.copied:after {
+    content: '✔️';
+}
+
+table {
+    width: 100%;
+    max-width: 600px; /* Maximale Breite der Tabelle */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: #1f1f1f;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.abc {
+    padding-bottom: 20px;
+}
